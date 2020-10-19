@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/windows/servercore:2004
 #FROM mcr.microsoft.com/windows/nanoserver:1809
 #FROM mcr.microsoft.com/powershell:lts-nanoserver-1809-20201013
-#Install Chocolatey
+#Install Chocolatey for test
 RUN powershell.exe -Command Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 
